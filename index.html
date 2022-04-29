@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="calculator">
+            <div class="headline">
+                <h1>Calculator</h1>
+            </div>
+
+            <div class="textArea">
+                <input readonly type="text" name="value" id="inp" placeholder="Enter Number">
+            </div>
+
+
+            <!-- creating buttons -->
+
+            <div class="controls">
+                <button class="btn-style" onclick="setValue(1)">1</button>
+                <button class="btn-style" onclick="setValue(2)">2</button>
+                <button class="btn-style" onclick="setValue(3)">3</button>
+                <button class="btn-style" onclick="setValue('/')">/</button>
+
+                <button class="btn-style" onclick="setValue(4)">4</button>
+                <button class="btn-style" onclick="setValue(5)">5</button>
+                <button class="btn-style" onclick="setValue(6)">6</button>
+                <button class="btn-style" onclick="setValue('-')">-</button>
+
+                <button class="btn-style" onclick="setValue(7)">7</button>
+                <button class="btn-style" onclick="setValue(8)">8</button>
+                <button class="btn-style" onclick="setValue(9)">9</button>
+                <button class="btn-style" onclick="setValue('+')"> + </button>
+                <button class="btn-style" onclick="setValue('.')">.</button>
+                <button class="btn-style" onclick="setValue('0')">0</button>
+                <button class="btn-style" onclick="setValue('*')"> * </button>
+                <button class=" btn-style" onclick="calculate()"> = </button>
+
+
+                <button class="btn-style" onclick="percent()"> %</button>
+                <button class="btn-style" onclick="root()">&#x221A;</button>
+                <button class="btn-style" onclick="allClear()">AC</button>
+                <button class="btn-style" onclick="backspace()"><img src="icons/backspace.png" alt="Cl"
+                        width="20px"></button>
+
+
+
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
